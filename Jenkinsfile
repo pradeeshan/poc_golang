@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'mac' }
 
     tools {
         go 'Go-1.22'
@@ -38,3 +38,4 @@ pipeline {
         }
     }
 }
+
